@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263b2b">
+  <meta name="description" content="Participe do Acamp'27! De 14 a 17 de fevereiro de 2027, na Chácara Auracy. Inscrições de 9 de novembro de 2026 a 25 de janeiro de 2027.">
+  <link rel="icon" type="image/png" href="logo-acamp27.png">
+  <meta property="og:image" content="logo-acamp27.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Acamp'27 | 14 a 17 de fevereiro de 2027">
+  <meta property="og:description" content="Natureza, convivência, atividades em família e espiritualidade na Chácara Auracy.">
+  <title>Acamp'27 | 14 a 17 de fevereiro de 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest:#263b2b; --forest-2:#38543b; --leaf:#66815b; --sage:#e9efe4;
+      --cream:#faf8f1; --paper:#fffefa; --gold:#e7b85c; --orange:#d9783e;
+      --ink:#202820; --muted:#687168; --line:#e7e8df; --white:#fff;
+      --shadow:0 16px 42px rgba(38,59,43,.10); --radius:22px; --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--forest-2);font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:25px;height:2px;background:var(--gold)}
+    .section{padding:86px 0}
+    .section-head{max-width:700px;margin:0 auto 38px;text-align:center}
+    .section-head .eyebrow{justify-content:center}
+    h1,h2,h3,h4,p{margin-top:0}
+    h2{font:700 clamp(2rem,4vw,3rem)/1.12 "Playfair Display",Georgia,serif;color:var(--forest);margin:12px 0}
+    .section-head p{color:var(--muted);margin:12px auto 0;max-width:620px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 23px;background:var(--gold);color:#26311f;font-weight:800;box-shadow:0 9px 22px rgba(231,184,92,.22);transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 13px 26px rgba(231,184,92,.30)}
+    .btn-primary{background:var(--orange);color:white;box-shadow:0 10px 25px rgba(217,120,62,.25)}
+    .btn-primary:hover{background:#c96732}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,.55);color:white;box-shadow:none}
+    .btn-outline:hover{background:rgba(255,255,255,.12)}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(38,59,43,.96);backdrop-filter:blur(12px);color:white;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+    .nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em}
+    .brand-mark{width:48px;height:48px;flex:0 0 48px;border-radius:13px;overflow:hidden;background:var(--gold);display:block;box-shadow:0 3px 12px rgba(0,0,0,.14)}
+    .brand-mark img{width:100%;height:100%;object-fit:cover}
+    .brand small{display:block;color:#dce5d8;font-size:.68rem;font-weight:500;letter-spacing:.04em}
+    .nav-links{display:flex;align-items:center;gap:22px}
+    .nav-links a:not(.btn){font-size:.88rem;color:#f1f3ed;font-weight:600;opacity:.92}
+    .nav-links a:not(.btn):hover{color:var(--gold)}
+    .nav-links .btn{padding:10px 18px;font-size:.85rem}
+    .menu-btn{display:none;border:1px solid rgba(255,255,255,.3);background:transparent;color:white;border-radius:10px;padding:8px 11px;font-size:1.25rem}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:660px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(25,43,30,.78) 0%,rgba(25,43,30,.58) 48%,rgba(25,43,30,.38) 100%),url("capa-acamp27-2027.jpeg") center 16% / cover no-repeat}
+    .hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid rgba(255,255,255,.10);border-radius:50%;width:600px;height:600px;right:-120px;top:-240px}
+    .hero:after{width:450px;height:450px;right:20px;top:-150px}
+    .hero-content{position:relative;z-index:2;padding:100px 0 92px;max-width:690px}
+    .hero .eyebrow{color:#f2d69d}
+    .hero h1{font:800 clamp(3.4rem,9vw,6.8rem)/.98 "Playfair Display",Georgia,serif;letter-spacing:-.04em;margin:20px 0}
+    .hero h1 span{color:var(--gold)}
+    .hero-copy{max-width:620px;font-size:clamp(1rem,2vw,1.18rem);color:#edf1e9;margin-bottom:28px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 32px}
+    .meta-pill{display:flex;align-items:center;gap:9px;padding:10px 15px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.08);font-size:.9rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-note{margin-top:17px;color:#d9e2d5;font-size:.83rem}
+    .countdown-band{background:var(--forest-2);color:white;padding:22px 0}
+    .countdown-inner{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;text-align:center}
+    .countdown-label{font-weight:700;color:#e9eee5}
+    .countdown{display:flex;gap:10px}
+    .time-box{min-width:66px;padding:7px 11px;border-radius:12px;background:rgba(255,255,255,.10)}
+    .time-box strong{display:block;font-size:1.45rem;line-height:1.2;color:var(--gold);font-variant-numeric:tabular-nums}
+    .time-box span{font-size:.68rem;color:#e1e8dc;text-transform:uppercase;letter-spacing:.08em}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-2px}
+    .fact{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;gap:14px;align-items:center;box-shadow:var(--shadow)}
+    .fact-icon{width:48px;height:48px;flex:0 0 48px;border-radius:15px;background:var(--sage);display:grid;place-items:center;font-size:1.35rem}
+    .fact strong{display:block;color:var(--forest);font-size:.96rem}
+    .fact span{font-size:.82rem;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+    .about-copy p{color:var(--muted)}
+    .about-art{min-height:340px;border-radius:28px;background:linear-gradient(145deg,#dce6d4,#a9bd9e);position:relative;overflow:hidden;display:grid;place-items:center;padding:35px}
+    .about-art:before,.about-art:after{content:"";position:absolute;border:1px solid rgba(38,59,43,.18);border-radius:50%;width:330px;height:330px}
+    .about-art:after{width:240px;height:240px}
+    .art-card{position:relative;z-index:1;background:rgba(255,254,250,.88);padding:28px;border-radius:20px;text-align:center;max-width:290px;box-shadow:var(--shadow)}
+    .art-card .art-emoji{font-size:3rem}
+    .art-card h3{font:700 1.6rem "Playfair Display",serif;color:var(--forest);margin:8px 0}
+    .art-card p{font-size:.9rem;color:var(--muted);margin:0}
+
+    .experiences-section{background:var(--cream)}
+    .experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .experience-card{background:var(--paper);border:1px solid var(--line);border-radius:19px;padding:24px;box-shadow:0 8px 22px rgba(38,59,43,.05);transition:transform .2s,box-shadow .2s}
+    .experience-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .experience-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:var(--sage);font-size:1.45rem;margin-bottom:15px}
+    .experience-card h3{font:700 1.12rem "Playfair Display",serif;color:var(--forest);margin:0 0 7px}
+    .experience-card p{font-size:.88rem;color:var(--muted);margin:0}
+    .experience-note{max-width:800px;margin:20px auto 0;text-align:center;color:var(--muted);font-size:.78rem}
+    .registration-welcome{max-width:760px;margin:24px auto 0;padding:17px 20px;border-radius:15px;background:#fffefa;border:1px solid var(--line);display:grid;gap:4px;text-align:center}
+    .registration-welcome strong{color:var(--forest)}
+    .registration-welcome span{font-size:.88rem;color:var(--muted)}
+
+    .pricing-section{background:#f0f3eb}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .price-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:27px;box-shadow:0 8px 25px rgba(38,59,43,.05)}
+    .price-card.featured{background:var(--forest);color:white;border-color:var(--forest);transform:translateY(-8px)}
+    .price-icon{font-size:1.7rem}
+    .price-card h3{font:700 1.35rem "Playfair Display",serif;color:var(--forest);margin:12px 0 4px}
+    .price-card.featured h3{color:white}
+    .price-value{font-size:2rem;font-weight:800;letter-spacing:-.04em;color:var(--forest);margin:7px 0}
+    .price-card.featured .price-value{color:var(--gold)}
+    .price-card p{color:var(--muted);font-size:.9rem;margin:0}
+    .price-card.featured p{color:#e0e8dc}
+    .price-tag{display:inline-block;margin-top:15px;padding:6px 11px;background:var(--sage);border-radius:999px;color:var(--forest);font-size:.75rem;font-weight:800}
+    .price-card.featured .price-tag{background:rgba(255,255,255,.13);color:#f7dfac}
+    .rule-note{max-width:850px;margin:26px auto 0;padding:17px 20px;border-left:4px solid var(--gold);border-radius:0 13px 13px 0;background:#fffefa;color:var(--muted);font-size:.9rem}
+    .calculator{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}
+    .calc-panel,.result-panel{border-radius:24px;padding:28px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .calc-panel h3,.result-panel h3{font:700 1.45rem "Playfair Display",serif;color:var(--forest);margin-bottom:6px}
+    .subcopy{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+    .quantity-row{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);gap:15px}
+    .quantity-row:last-of-type{border-bottom:0}
+    .quantity-label strong{display:block;color:var(--forest)}
+    .quantity-label span{font-size:.8rem;color:var(--muted)}
+    .stepper{display:flex;align-items:center;gap:13px}
+    .stepper button{width:35px;height:35px;border:1px solid #d7dfd1;background:var(--sage);color:var(--forest);border-radius:50%;font-size:1.2rem;font-weight:700;cursor:pointer}
+    .stepper button:disabled{opacity:.4;cursor:not-allowed}
+    .stepper output{min-width:22px;text-align:center;font-weight:800;font-variant-numeric:tabular-nums}
+    .calc-foot{font-size:.76rem;color:var(--muted);margin:17px 0 0}
+    .result-panel{background:var(--forest);color:white}
+    .result-panel h3{color:white}
+    .result-panel .subcopy{color:#dce5d8}
+    .result-line{display:flex;justify-content:space-between;gap:12px;padding:9px 0;color:#e7ede3;font-size:.9rem}
+    .result-line strong{color:white;font-variant-numeric:tabular-nums}
+    .result-line.discount strong{color:#bce0a9}
+    .result-total{margin:13px 0;padding:18px;border-radius:16px;background:rgba(255,255,255,.10)}
+    .result-total span{display:block;color:#e2eadd;font-size:.78rem}
+    .result-total strong{display:block;color:var(--gold);font-size:2.15rem;line-height:1.25;font-variant-numeric:tabular-nums}
+    .entry-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .entry-box{padding:13px;border-radius:14px;background:rgba(255,255,255,.08)}
+    .entry-box span{display:block;color:#dce5d8;font-size:.74rem}
+    .entry-box strong{font-size:1.1rem;color:white;font-variant-numeric:tabular-nums}
+    .calc-warning{margin:15px 0 0;font-size:.73rem;line-height:1.5;color:#dce5d8}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+    .step-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 22px rgba(38,59,43,.05)}
+    .step-number{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:var(--sage);color:var(--forest);font-weight:800;margin-bottom:15px}
+    .step-card h3{font:700 1.1rem "Playfair Display",serif;color:var(--forest);margin-bottom:7px}
+    .step-card p{font-size:.86rem;color:var(--muted);margin:0}
+    .registration-cta{margin-top:28px;text-align:center}
+    .qr-section{background:var(--forest);color:white}
+    .qr-section h2{color:white}
+    .qr-section .section-head p{color:#dce5d8}
+    .qr-card{max-width:1060px;margin:auto;background:var(--paper);color:var(--ink);border-radius:24px;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:26px;align-items:start;box-shadow:0 18px 45px rgba(0,0,0,.16)}
+    .form-frame{min-width:0;padding:8px;border:1px solid var(--line);border-radius:16px;background:white;overflow:hidden}
+    .form-frame iframe{display:block;width:100%;height:480px;border:0;border-radius:10px;background:white}
+    .form-fallback{margin:12px 4px 2px;color:var(--muted);font-size:.82rem}
+    .form-fallback a{color:var(--forest-2);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+    .qr-copy{text-align:center}
+    .qr-link{display:block;padding:10px;border:1px solid var(--line);border-radius:16px;background:white}
+    .qr-link img{width:100%;height:auto;image-rendering:auto}
+    .qr-copy h3{font:700 1.4rem "Playfair Display",serif;color:var(--forest);margin:16px 0 8px}
+    .qr-copy p{color:var(--muted);font-size:.9rem}
+    .qr-copy .btn{margin-top:5px}
+    .deadline{display:inline-block;margin-top:13px;color:#9a542d;font-size:.82rem;font-weight:800}
+    .bring-section{background:#f0f3eb}
+    .bring-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+    .bring-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:23px}
+    .bring-card h3{font:700 1.2rem "Playfair Display",serif;color:var(--forest);margin-bottom:12px}
+    .bring-card ul{padding:0;margin:0;list-style:none;display:grid;gap:8px}
+    .bring-card li{position:relative;padding-left:22px;color:var(--muted);font-size:.88rem}
+    .bring-card li:before{content:"✓";position:absolute;left:0;color:var(--leaf);font-weight:900}
+    .important-card{grid-column:1/-1;border-left:4px solid var(--orange)}
+    .important-card p{color:var(--muted);font-size:.88rem;margin:8px 0}
+    .contact-box{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:36px;text-align:center;box-shadow:var(--shadow)}
+    .contact-box h2{font-size:2.2rem}
+    .contact-box p{color:var(--muted);max-width:570px;margin:0 auto 20px}
+    footer{padding:30px 0;background:#1d3022;color:#dce5d8;text-align:center;font-size:.82rem}
+    footer strong{color:white}
+    .whatsapp{position:fixed;right:20px;bottom:20px;z-index:40;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20bd68;color:white;box-shadow:0 10px 25px rgba(0,0,0,.2);transition:transform .2s}
+    .whatsapp svg{width:31px;height:31px;fill:currentColor}
+    .whatsapp:hover{transform:translateY(-4px)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.nav-links{gap:13px}.nav-links a:not(.btn){font-size:.8rem}.about-grid{gap:25px}.experience-grid{grid-template-columns:repeat(2,1fr)}.price-grid{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.calculator{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+    @media(max-width:680px){
+      .container{width:min(100% - 30px,var(--max))}.section{padding:65px 0}
+      .nav-wrap{min-height:68px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 20px 22px;background:var(--forest);flex-direction:column;align-items:stretch;gap:14px;border-top:1px solid rgba(255,255,255,.12)}
+      .nav-links.open{display:flex}.nav-links a:not(.btn){font-size:.95rem;padding:5px 0}.nav-links .btn{width:100%}
+      .hero{min-height:640px;background-position:center 18%}.hero-content{padding:78px 0}.hero h1{font-size:clamp(3.5rem,17vw,5.5rem)}.hero-meta{display:grid;justify-items:start}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{width:100%}
+      .countdown-inner{gap:13px}.countdown{gap:6px}.time-box{min-width:57px;padding:7px}.time-box strong{font-size:1.2rem}
+      .about-grid{grid-template-columns:1fr}.about-art{min-height:270px}.experience-grid{grid-template-columns:1fr}
+      .price-grid{grid-template-columns:1fr}.price-card{padding:23px}
+      .calc-panel,.result-panel{padding:22px}.steps{grid-template-columns:1fr}
+      .qr-card{grid-template-columns:1fr;text-align:center;padding:16px;gap:18px}
+      .form-frame{padding:5px}.form-frame iframe{height:480px}
+      .qr-copy{max-width:320px;margin:auto}.qr-link{max-width:190px;margin:auto}
+      .bring-grid{grid-template-columns:1fr}.important-card{grid-column:auto}
+      .contact-box{padding:27px 20px}.whatsapp{width:52px;height:52px;right:14px;bottom:14px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Acamp'27 - início">
+        <span class="brand-mark"><img src="logo-acamp27.png" alt="Logo Acamp'27"></span>
+        <span>ACAMP'27<small>Para você e sua família</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">O evento</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#valores">Valores</a>
+        <a href="#simulador">Simular</a>
+        <a href="#inscricao">Inscrição</a>
+        <a href="#levar">O que levar</a>
+        <a class="btn" href="https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink" target="_blank" rel="noopener noreferrer">Inscreva-se ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">Sejam bem-vindos à 4ª edição</span>
+          <h1>Acamp<span>'27</span></h1>
+          <p class="hero-copy">Que alegria ter você conosco! Serão quatro dias de louvor, comunhão, gincanas, vigília e edificação. Um encontro de gerações para viver aquilo que Deus preparou para nós e glorificar o nome de Jesus.</p>
+          <div class="hero-meta">
+            <span class="meta-pill">📅 14 a 17 de fevereiro de 2027</span>
+            <span class="meta-pill">📍 Chácara Auracy — Sítio da Mãe da Brendha</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink" target="_blank" rel="noopener noreferrer">QUERO ME INSCREVER <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="#valores">Consultar valores</a>
+          </div>
+          <p class="hero-note">Inscrições de 09/11/2026 a 25/01/2027 • Vagas sujeitas à confirmação da organização.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-band" aria-label="Contagem regressiva para o evento">
+      <div class="container countdown-inner">
+        <div class="countdown-label" id="countdownMessage">A contagem para o Acamp'27 já começou!</div>
+        <div class="countdown" id="countdown">
+          <div class="time-box"><strong id="days">--</strong><span>dias</span></div>
+          <div class="time-box"><strong id="hours">--</strong><span>horas</span></div>
+          <div class="time-box"><strong id="minutes">--</strong><span>min</span></div>
+          <div class="time-box"><strong id="seconds">--</strong><span>seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding-top:28px" aria-label="Resumo do evento">
+      <div class="facts">
+        <div class="fact"><div class="fact-icon">📅</div><div><strong>14 a 17 de fevereiro</strong><span>Quatro dias de acampamento</span></div></div>
+        <div class="fact"><div class="fact-icon">📍</div><div><strong>Chácara Auracy</strong><span>Sítio da Mãe da Brendha</span></div></div>
+        <div class="fact"><div class="fact-icon">📝</div><div><strong>Inscrições até 25/01/2027</strong><span>Garanta sua participação com antecedência</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">Mais que um acampamento</span>
+          <h2>Um encontro de gerações com um mesmo propósito.</h2>
+          <p>O ACAMP é um destino para todas as idades: um lugar onde crianças, jovens, adultos e famílias se encontram para compartilhar momentos, fortalecer laços e viver uma experiência especial na presença do Senhor.</p>
+          <p>Nosso maior objetivo é que, durante o Carnaval, vidas sejam alcançadas, corações sejam transformados e o nome de Jesus seja glorificado. Queremos que a comunhão vivida nesses quatro dias continue produzindo frutos muito além do acampamento.</p>
+          <p>Prepare o coração, convide alguém e venha fazer parte dessa história. Temos muito para viver juntos no ACAMP'27!</p>
+          <a class="btn" href="#inscricao">Quero participar ↗</a>
+        </div>
+        <div class="about-art" aria-label="Mensagem sobre o propósito do Acamp'27">
+          <div class="art-card"><div class="art-emoji">🏕️❤️</div><h3>Uma só fé, muitas gerações</h3><p>Comunhão, transformação de vidas e o nome de Jesus glorificado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experiences-section" id="experiencias">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Quatro dias para viver intensamente</span>
+          <h2>O que vamos viver no ACAMP'27?</h2>
+          <p>Momentos preparados para fortalecer a fé, aproximar pessoas e criar memórias que vão permanecer depois desses dias.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card"><span class="experience-icon">🎶</span><h3>Louvor e adoração</h3><p>Momentos de louvor e celebração na presença do Senhor.</p></article>
+          <article class="experience-card"><span class="experience-icon">🤝</span><h3>Comunhão</h3><p>Tempo para compartilhar, acolher pessoas e fortalecer amizades e laços familiares.</p></article>
+          <article class="experience-card"><span class="experience-icon">🏆</span><h3>Gincanas</h3><p>Atividades e desafios para integrar participantes de diferentes idades.</p></article>
+          <article class="experience-card"><span class="experience-icon">🌙</span><h3>Vigília</h3><p>Um momento especial de busca, oração e comunhão com Deus.</p></article>
+          <article class="experience-card"><span class="experience-icon">📖</span><h3>Edificação</h3><p>Ministrações e momentos de aprendizado e crescimento espiritual.</p></article>
+          <article class="experience-card"><span class="experience-icon">👨‍👩‍👧‍👦</span><h3>Todas as gerações</h3><p>Um encontro para todas as idades, com um mesmo propósito e muitas histórias para compartilhar.</p></article>
+        </div>
+        <p class="experience-note">As atividades acima representam as experiências previstas para o acampamento. Os horários e a programação detalhada serão divulgados pela organização.</p>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="valores">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Planeje sua participação</span>
+          <h2>Valores de inscrição</h2>
+          <p>Confira os valores individuais e a condição especial para famílias.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <div class="price-icon">🧑</div><h3>Inscrição individual</h3>
+            <div class="price-value">R$ 165,00</div>
+            <p>Valor por participante adulto.</p>
+            <span class="price-tag">Valor por pessoa</span>
+          </article>
+          <article class="price-card">
+            <div class="price-icon">🧒</div><h3>Inscrição infantil</h3>
+            <div class="price-value">R$ 82,50</div>
+            <p>Meia entrada para crianças de 6 a 12 anos.</p>
+            <span class="price-tag">De 6 a 12 anos</span>
+          </article>
+          <article class="price-card featured">
+            <div class="price-icon">👨‍👩‍👧‍👦</div><h3>Desconto familiar</h3>
+            <div class="price-value">15% OFF</div>
+            <p>Desconto de 15% para inscrições com pelo menos 2 adultos e no máximo 1 criança. Inscrições com apenas 1 adulto ou com 2 ou mais crianças não recebem o desconto.</p>
+            <span class="price-tag">2 ou mais adultos • até 1 criança</span>
+          </article>
+        </div>
+        <div class="rule-note"><strong>Regra do desconto familiar:</strong> os 15% são concedidos quando a inscrição reúne pelo menos 2 adultos e contém, no máximo, 1 criança. Com apenas 1 adulto ou com 2 ou mais crianças, o desconto não será aplicado. <strong>Reserva da vaga:</strong> a entrada obrigatória corresponde a 30% do valor final, calculada depois de eventual desconto; o saldo restante corresponde aos 70%. A reserva depende da confirmação do pagamento pela organização.</div>
+      </div>
+    </section>
+
+    <section class="section" id="simulador">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Faça sua estimativa</span>
+          <h2>Simulador de inscrição</h2>
+          <p>Informe quantos adultos e crianças participarão. O cálculo será atualizado automaticamente.</p>
+        </div>
+        <div class="calculator">
+          <div class="calc-panel">
+            <h3>Quem vai com você?</h3>
+            <p class="subcopy">Crianças: de 6 a 12 anos. O desconto de 15% exige pelo menos 2 adultos e no máximo 1 criança.</p>
+            <div class="quantity-row">
+              <div class="quantity-label"><strong>Adultos</strong><span>R$ 165,00 por pessoa</span></div>
+              <div class="stepper"><button type="button" data-change="adults" data-step="-1" aria-label="Diminuir adultos">−</button><output id="adultsCount" aria-live="polite">1</output><button type="button" data-change="adults" data-step="1" aria-label="Adicionar adulto">+</button></div>
+            </div>
+            <div class="quantity-row">
+              <div class="quantity-label"><strong>Crianças</strong><span>R$ 82,50 por criança</span></div>
+              <div class="stepper"><button type="button" data-change="children" data-step="-1" aria-label="Diminuir crianças">−</button><output id="childrenCount" aria-live="polite">0</output><button type="button" data-change="children" data-step="1" aria-label="Adicionar criança">+</button></div>
+            </div>
+            <p class="calc-foot">Selecione pelo menos um participante. Para crianças fora da faixa de 6 a 12 anos, consulte a organização.</p>
+          </div>
+          <div class="result-panel" aria-live="polite">
+            <h3>Resumo da sua inscrição</h3>
+            <p class="subcopy" id="participantSummary">1 adulto • 0 crianças</p>
+            <div class="result-line"><span>Valor bruto</span><strong id="grossValue">R$ 165,00</strong></div>
+            <div class="result-line discount"><span>Desconto familiar</span><strong id="discountValue">R$ 0,00</strong></div>
+            <p class="calc-warning" id="discountRuleMessage">O desconto depende da quantidade de participantes e de crianças.</p>
+            <div class="result-total"><span>Valor final com desconto</span><strong id="finalValue">R$ 165,00</strong></div>
+            <div class="entry-grid">
+              <div class="entry-box"><span>Entrada (30%)</span><strong id="entryValue">R$ 49,50</strong></div>
+              <div class="entry-box"><span>Saldo restante</span><strong id="balanceValue">R$ 115,50</strong></div>
+            </div>
+            <p class="calc-warning">Estimativa informativa. Crianças consideradas no cálculo: de 6 a 12 anos. A entrada de 30% é calculada sobre o valor final, após eventual desconto. A reserva será confirmada após validação do pagamento pela organização.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="inscricao" style="background:#f0f3eb">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Sua participação começa aqui</span>
+          <h2>Vamos preparar tudo para receber você!</h2>
+          <p>O formulário foi criado para reunir e organizar as informações de cada acampista. Esses dados ajudam a equipe a planejar o evento e preparar uma experiência ainda melhor para todos.</p>
+        </div>
+        <div class="steps">
+          <article class="step-card"><div class="step-number">01</div><h3>Acesse o formulário</h3><p>Abra o formulário oficial pelo botão desta página ou pelo QR Code.</p></article>
+          <article class="step-card"><div class="step-number">02</div><h3>Preencha com atenção</h3><p>Informe os dados de cada participante com cuidado e confira as informações antes de enviar.</p></article>
+          <article class="step-card"><div class="step-number">03</div><h3>Confira os valores</h3><p>Verifique o valor bruto e confira se a composição da inscrição atende à regra do desconto familiar: pelo menos 2 adultos e no máximo 1 criança.</p></article>
+          <article class="step-card"><div class="step-number">04</div><h3>Realize a entrada</h3><p>Siga as orientações da organização para realizar o pagamento dos 30% do valor após o desconto.</p></article>
+          <article class="step-card"><div class="step-number">05</div><h3>Envie a comprovação</h3><p>Se solicitado, encaminhe o comprovante pelo canal indicado pela organização.</p></article>
+          <article class="step-card"><div class="step-number">06</div><h3>Aguarde a confirmação</h3><p>A vaga será considerada reservada somente após a confirmação do pagamento pela organização.</p></article>
+        </div>
+        <div class="registration-welcome">
+          <strong>Precisa de ajuda?</strong>
+          <span>Se surgir qualquer dúvida durante o preenchimento ou sobre a inscrição, entre em contato com a organização. Estamos à disposição para ajudar!</span>
+        </div>
+        <div class="registration-cta"><a class="btn btn-primary" href="https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink" target="_blank" rel="noopener noreferrer">ACESSAR FORMULÁRIO DE INSCRIÇÃO ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section qr-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" style="color:#f2d69d">Inscrições abertas</span>
+          <h2>Faça sua inscrição</h2>
+          <p>Preencha o formulário oficial abaixo. Se preferir, use o QR Code para continuar em outro dispositivo.</p>
+        </div>
+        <div class="qr-card">
+          <div class="form-column">
+            <div class="form-frame">
+              <iframe
+                title="Formulário oficial de inscrição do Acamp'27"
+                width="640px"
+                height="480px"
+                src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__6Ol-QRUQzJWUDBDWEFYSE9EOU5MTzQxSDZBUkFWUi4u&amp;embed=true"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                style="border:none;max-width:100%;max-height:100vh"
+                loading="lazy"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                msallowfullscreen></iframe>
+            </div>
+            <p class="form-fallback">Se o formulário não carregar, <a href="https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink" target="_blank" rel="noopener noreferrer">abra-o diretamente em outra página ↗</a>.</p>
+          </div>
+          <div class="qr-copy">
+            <a class="qr-link" href="https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink" target="_blank" rel="noopener noreferrer" aria-label="Abrir formulário oficial de inscrição pelo QR Code">
+              <img src="qr-inscricao-acamp27.png" alt="QR Code oficial para abrir o formulário de inscrição do Acamp'27 em outro dispositivo" width="500" height="500">
+            </a>
+            <h3>Prefere outro dispositivo?</h3>
+            <p>Aponte a câmera para o QR Code ou abra o formulário diretamente.</p>
+            <span class="deadline">Inscrições até 25 de janeiro de 2027.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bring-section" id="levar">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Prepare sua mochila</span>
+          <h2>O que levar</h2>
+          <p>Organize seus itens com antecedência para aproveitar o acampamento com conforto.</p>
+        </div>
+        <div class="bring-grid">
+          <article class="bring-card"><h3>🏕️ Acampamento</h3><ul><li>Colchonete normal ou inflável</li><li>Rede e corda para rede</li><li>Travesseiro</li><li>Lanterna</li><li>Bíblia, caderno e caneta para anotações</li><li>Power bank extra</li><li>Pratos, colheres e copos reutilizáveis</li><li>Garrafa de água</li></ul></article>
+          <article class="bring-card"><h3>👕 Vestuário</h3><ul><li>Roupas confortáveis para as atividades</li><li>Agasalhos para as noites</li><li>Roupas de banho</li><li>Toalhas de banho e de rosto</li><li>Calçados adequados</li><li>Chinelos para as áreas comuns</li></ul></article>
+          <article class="bring-card"><h3>🧼 Higiene e saúde</h3><ul><li>Kit de higiene pessoal: escova, sabonete, shampoo, condicionador e desodorante</li><li>Protetor solar FPS 30 ou superior</li><li>Repelente de insetos</li><li>Medicamentos de uso pessoal</li><li>Kit básico de primeiros socorros</li><li>Lenços umedecidos e álcool em gel</li></ul></article>
+          <article class="bring-card"><h3>💡 Dica importante</h3><ul><li>Identifique seus pertences</li><li>Leve uma bolsa para roupas molhadas</li><li>Organize os itens de higiene em uma nécessaire</li><li>Confira sua mochila antes de sair</li></ul></article>
+          <article class="bring-card important-card"><h3>⚠️ Informações importantes</h3>
+            <p><strong>Cama e banho:</strong> o acampamento não fornece roupa de cama e banho. Cada participante deverá levar seus próprios itens, como toalha, lençol, travesseiro e cobertor, além de rede ou colchonete.</p>
+            <p><strong>Alimentação:</strong> as refeições serão fornecidas. Os participantes deverão levar seus próprios pratos, copos e talheres. É permitido levar lanches extras.</p>
+            <p><strong>Vestuário:</strong> conforme as orientações da organização, não é permitido o uso de blusas decotadas, croppeds ou babydolls. Leggings deverão ser usadas com camisa que cubra o quadril. Homens não poderão tomar banho sem camisa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact-box">
+          <span class="eyebrow">Estamos à disposição</span>
+          <h2>Ficou com alguma dúvida?</h2>
+          <p>Entre em contato com a organização para esclarecer dúvidas sobre inscrição, pagamento, participantes ou orientações do acampamento.</p>
+          <a class="btn" href="https://wa.me/559870109772" target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp ↗</a>
+          <p style="font-size:.72rem;margin:13px auto 0">Contato mantido conforme o número informado na versão anterior do site.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© 2027 <strong>Acamp'27</strong> — Todos os direitos reservados.</div></footer>
+  <a class="whatsapp" href="https://wa.me/559870109772" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16 2.7A13.2 13.2 0 0 0 4.7 22.8L3 29l6.4-1.7A13.2 13.2 0 1 0 16 2.7Zm0 23.8a10.5 10.5 0 0 1-5.3-1.4l-.4-.2-3.8 1 1-3.7-.3-.4A10.5 10.5 0 1 1 16 26.5Zm5.8-7.9c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <script>
+    (() => {
+      const FORM_URL = "https://forms.cloud.microsoft/r/17fuFVyT1A?origin=lprLink";
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+
+      menuBtn.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+        menuBtn.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+        menuBtn.textContent = isOpen ? "×" : "☰";
+      });
+      navLinks.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+          menuBtn.setAttribute("aria-label", "Abrir menu");
+          menuBtn.textContent = "☰";
+        });
+      });
+
+      // Valores em centavos para evitar imprecisão de ponto flutuante.
+      let adults = 1;
+      let children = 0;
+      const money = cents => (cents / 100).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
+      const roundHalfUp = (numerator, denominator) => Math.floor((numerator * 2 + denominator) / (2 * denominator));
+
+      function updateCalculator() {
+        const totalPeople = adults + children;
+        const gross = adults * 16500 + children * 8250;
+        // Regra familiar: pelo menos 2 adultos e no máximo 1 criança.
+        const familyDiscountEligible = adults >= 2 && children <= 1;
+        const discount = familyDiscountEligible ? roundHalfUp(gross * 15, 100) : 0;
+        const finalValue = gross - discount;
+        // A entrada é calculada sobre o valor final, após eventual desconto.
+        const entry = roundHalfUp(finalValue * 30, 100);
+        const balance = finalValue - entry;
+
+        document.getElementById("adultsCount").textContent = adults;
+        document.getElementById("childrenCount").textContent = children;
+        document.getElementById("participantSummary").textContent =
+          `${adults} ${adults === 1 ? "adulto" : "adultos"} • ${children} ${children === 1 ? "criança" : "crianças"} • ${totalPeople} ${totalPeople === 1 ? "participante" : "participantes"}`;
+        document.getElementById("grossValue").textContent = money(gross);
+        document.getElementById("discountValue").textContent = discount > 0 ? "− " + money(discount) : money(0);
+        const ruleMessage = document.getElementById("discountRuleMessage");
+        if (familyDiscountEligible) {
+          ruleMessage.textContent = "Desconto familiar de 15% aplicado: a inscrição tem pelo menos 2 adultos e no máximo 1 criança.";
+        } else {
+          ruleMessage.textContent = "Desconto familiar não aplicado: é necessário ter pelo menos 2 adultos e no máximo 1 criança.";
+        }
+        document.getElementById("finalValue").textContent = money(finalValue);
+        document.getElementById("entryValue").textContent = money(entry);
+        document.getElementById("balanceValue").textContent = money(balance);
+
+        document.querySelector('[data-change="adults"][data-step="-1"]').disabled = adults === 0;
+        document.querySelector('[data-change="children"][data-step="-1"]').disabled = children === 0;
+      }
+
+      document.querySelectorAll("[data-change]").forEach(button => {
+        button.addEventListener("click", () => {
+          const type = button.dataset.change;
+          const step = Number(button.dataset.step);
+          if (type === "adults") adults = Math.max(0, adults + step);
+          if (type === "children") children = Math.max(0, children + step);
+          if (adults + children === 0) {
+            if (type === "adults") adults = 1;
+            else children = 1;
+          }
+          updateCalculator();
+        });
+      });
+      updateCalculator();
+
+      // Contagem regressiva até 14/02/2027 às 00h, horário de Brasília.
+      const eventStart = new Date("2027-02-14T00:00:00-03:00").getTime();
+      const eventEnd = new Date("2027-02-18T00:00:00-03:00").getTime();
+      const pad = value => String(value).padStart(2, "0");
+      function updateCountdown() {
+        const now = Date.now();
+        const message = document.getElementById("countdownMessage");
+        const countdown = document.getElementById("countdown");
+        if (now >= eventStart && now < eventEnd) {
+          message.textContent = "O Acamp'27 está acontecendo!";
+          countdown.hidden = true;
+          return;
+        }
+        if (now >= eventEnd) {
+          message.textContent = "Obrigado por fazer parte do Acamp'27!";
+          countdown.hidden = true;
+          return;
+        }
+        const remaining = eventStart - now;
+        const days = Math.floor(remaining / 86400000);
+        const hours = Math.floor((remaining % 86400000) / 3600000);
+        const minutes = Math.floor((remaining % 3600000) / 60000);
+        const seconds = Math.floor((remaining % 60000) / 1000);
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = pad(hours);
+        document.getElementById("minutes").textContent = pad(minutes);
+        document.getElementById("seconds").textContent = pad(seconds);
+      }
+      updateCountdown();
+      window.setInterval(updateCountdown, 1000);
+
+    })();
+  </script>
+</body>
+</html>
